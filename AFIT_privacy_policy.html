@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFIT — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    header {
+      background: #141416;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; }
+    header h1 span { color: #20BF6B; }
+    header p { color: #aaa; margin-top: 8px; font-size: 0.9rem; }
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 36px 0 10px;
+      padding-left: 12px;
+      border-left: 4px solid #20BF6B;
+    }
+    p, li { font-size: 0.97rem; color: #333; }
+    ul { margin: 10px 0 0 20px; }
+    li { margin-bottom: 6px; }
+    .effective {
+      background: #eafaf1;
+      border: 1px solid #b7e4c7;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      color: #1a6435;
+    }
+    a { color: #20BF6B; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 32px 24px; font-size: 0.85rem; color: #888; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AFIT</span> — Privacy Policy</h1>
+  <p>AI-Powered Fitness Coaching</p>
+</header>
+
+<main>
+
+  <div class="effective">
+    <strong>Effective date:</strong> June 22, 2026 &nbsp;|&nbsp;
+    <strong>Last updated:</strong> June 22, 2026
+  </div>
+
+  <p>
+    AFIT ("we", "our", or "us") is an AI-powered fitness and nutrition coaching app. This
+    Privacy Policy explains what information we collect, how we use it, and your choices.
+    By using AFIT you agree to the practices described here.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+  <p><strong>Information you provide:</strong></p>
+  <ul>
+    <li>Account details: email address and password (stored securely via Supabase).</li>
+    <li>Fitness profile: age, gender, weight, training goals, experience level, injuries, and dietary preferences — entered during onboarding or in settings.</li>
+    <li>Workout logs and nutrition entries you record in the app.</li>
+    <li>Messages you send to the AI coach.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Health &amp; activity data (optional, on-device only):</strong></p>
+  <ul>
+    <li>If you grant permission, AFIT reads step count, heart rate, sleep duration, and calorie data from <strong>Android Health Connect</strong>.</li>
+    <li>This data is read directly from Health Connect on your device. It is used only to personalise your dashboard and AI coaching insights. It is <strong>never uploaded to our servers or shared with third parties</strong>.</li>
+    <li>You can revoke this permission at any time via Android Settings &gt; Apps &gt; AFIT &gt; Permissions, or via the Health Connect app.</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li><strong>To provide the service:</strong> generate personalised training programmes, track workouts, log meals, and deliver AI coaching responses.</li>
+    <li><strong>To power AI features:</strong> your fitness profile and questions are sent to an AI language model (Groq / Llama) via a secure server-side proxy. Your data is used solely to generate your response and is not stored by Groq for training purposes under their API terms.</li>
+    <li><strong>To improve the app:</strong> we may review aggregated, anonymised usage patterns to fix bugs and improve features. We do not sell or share individual user data.</li>
+    <li><strong>To send transactional emails:</strong> account confirmation, password reset (via Supabase Auth).</li>
+  </ul>
+
+  <h2>3. Data Storage &amp; Security</h2>
+  <ul>
+    <li>Your account and fitness data are stored in <strong>Supabase</strong>, a secure cloud database with row-level security. Only you can access your own data.</li>
+    <li>Passwords are never stored in plain text — Supabase uses bcrypt hashing.</li>
+    <li>All data is transmitted over HTTPS/TLS.</li>
+    <li>AI requests are routed through a server-side proxy — your Groq API key is never exposed to the client or your device.</li>
+  </ul>
+
+  <h2>4. Data Sharing</h2>
+  <p>We do <strong>not sell, rent, or trade</strong> your personal data. We share data only with the following service providers strictly to operate the app:</p>
+  <ul>
+    <li><strong>Supabase</strong> (supabase.com) — authentication and database hosting.</li>
+    <li><strong>Groq</strong> (groq.com) — AI language model inference. Only the content of your AI coaching requests is transmitted; no personally identifiable account information is sent.</li>
+  </ul>
+  <p style="margin-top:10px">We may disclose information if required by law or to protect our legal rights.</p>
+
+  <h2>5. Health Data (Android Health Connect)</h2>
+  <p>
+    AFIT complies with the
+    <a href="https://developer.android.com/health-and-fitness/guides/health-connect/develop/get-started" target="_blank">Android Health Connect Permissions Policy</a>.
+    Specifically:
+  </p>
+  <ul>
+    <li>Health Connect data is accessed only with your explicit permission.</li>
+    <li>We read steps, heart rate, sleep, and active calories solely to display them on your dashboard and to inform AI coaching.</li>
+    <li>We do not upload Health Connect data to any server.</li>
+    <li>We do not share Health Connect data with any third party, including advertisers.</li>
+    <li>We do not use Health Connect data for advertising purposes.</li>
+  </ul>
+
+  <h2>6. Children's Privacy</h2>
+  <p>
+    AFIT is not directed to children under 13. We do not knowingly collect personal information
+    from children under 13. If you believe a child has provided us personal information, please
+    contact us and we will delete it.
+  </p>
+
+  <h2>7. Your Rights &amp; Choices</h2>
+  <ul>
+    <li><strong>Access &amp; export:</strong> you can view all data you have entered in the app at any time.</li>
+    <li><strong>Delete account:</strong> contact us at <a href="mailto:u55d55@gmail.com">u55d55@gmail.com</a> to request full deletion of your account and associated data. We will action this within 30 days.</li>
+    <li><strong>Health permissions:</strong> revoke at any time via Android Settings without affecting other app functionality.</li>
+    <li><strong>Marketing emails:</strong> we do not send marketing emails. All emails are transactional (account-related only).</li>
+  </ul>
+
+  <h2>8. Data Retention</h2>
+  <p>
+    We retain your account data for as long as your account is active. If you request deletion,
+    we will delete your account and all associated personal data within 30 days. Anonymised
+    aggregate statistics may be retained indefinitely.
+  </p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>
+    If we make material changes to this policy, we will update the "Last updated" date above
+    and notify you via the app or email before the changes take effect.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    Questions about this policy? Contact us at:<br />
+    <a href="mailto:u55d55@gmail.com">u55d55@gmail.com</a>
+  </p>
+
+</main>
+
+<footer>
+  &copy; 2026 AFIT. All rights reserved.
+</footer>
+
+</body>
+</html>
