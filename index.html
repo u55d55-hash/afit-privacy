@@ -61,7 +61,7 @@
 
   <div class="effective">
     Effective date: June 22, 2026 &nbsp;|&nbsp;
-    Last updated: November 5, 2026
+    Last updated: November 6, 2026
   </div>
 
   <p>
@@ -85,12 +85,12 @@
   <ul>
     <li><strong>Notification token:</strong> if you allow notifications, your device's push token (Firebase Cloud Messaging, delivered through Apple Push Notification service on iPhone) so we can send training reminders. You can turn notifications off at any time in your phone's settings.</li>
   </ul>
-  <p style="margin-top:14px"><strong>Health &amp; activity data (Android only, optional, on-device only):</strong></p>
+  <p style="margin-top:14px"><strong>Health &amp; activity data (optional, stays on your device):</strong></p>
   <ul>
-    <li>If you grant permission, AFIT reads step count, heart rate, sleep duration, and calorie data from Android Health Connect.</li>
-    <li>This data is read directly from Health Connect on your device. It is used only to personalise your dashboard and AI coaching insights. It is never uploaded to our servers or shared with third parties.</li>
-    <li>You can revoke this permission at any time via Android Settings &gt; Apps &gt; AFIT &gt; Permissions, or via the Health Connect app.</li>
-    <li>The iPhone version of AFIT does not access Apple Health data.</li>
+    <li>If you grant permission, AFIT reads step count, heart rate, sleep duration, and active calories from Android Health Connect, or from Apple Health on iPhone (which includes data from an Apple Watch).</li>
+    <li>This data is read on your device and used only for the activity card on your dashboard and to pre-fill your daily readiness check-in. It is never uploaded to our servers, never sent to AI providers, and never shared with third parties.</li>
+    <li>On iPhone, if you allow it, AFIT also saves the workouts you finish to Apple Health (as strength training, with start and end time) so they appear in the Fitness app.</li>
+    <li>You can revoke access at any time: on Android via Settings &gt; Apps &gt; AFIT &gt; Permissions or the Health Connect app; on iPhone via Settings &gt; Health &gt; Data Access &amp; Devices &gt; AFIT.</li>
   </ul>
 
   <h2>2. How We Use Your Information</h2>
@@ -122,11 +122,12 @@
     <li><strong>Supabase</strong> (supabase.com) — authentication and database hosting.</li>
     <li><strong>OpenRouter</strong> (openrouter.ai), which passes AI requests to <strong>Google</strong> (Gemini, ai.google.dev) and <strong>OpenAI</strong> (openai.com), and <strong>Groq</strong> (groq.com) as a backup — AI processing of coaching requests and photos you choose to analyse, as described in section 2.</li>
     <li><strong>Google Firebase</strong> (firebase.google.com) — delivery of push notifications.</li>
+    <li><strong>Resend</strong> (resend.com) — delivery of password reset emails. Only your email address and the reset code are sent.</li>
     <li><strong>Google</strong> and <strong>Apple</strong> — only if you choose to sign in with them.</li>
   </ul>
   <p style="margin-top:12px">We may disclose information if required by law or to protect our legal rights.</p>
 
-  <h2>5. Health Data (Android Health Connect)</h2>
+  <h2>5. Health Data (Health Connect and Apple Health)</h2>
   <p>
     AFIT complies with the
     <a href="https://developer.android.com/health-and-fitness/guides/health-connect/develop/get-started" target="_blank">Android Health Connect Permissions Policy</a>.
@@ -139,6 +140,7 @@
     <li>We do not share Health Connect data with any third party, including advertisers.</li>
     <li>We do not use Health Connect data for advertising purposes.</li>
   </ul>
+  <p style="margin-top:12px">For Apple Health (HealthKit) on iPhone, the same rules apply: data is read only with your permission, stays on your device, is not stored in iCloud by AFIT, is never sold or shared, and is never used for advertising or marketing.</p>
 
   <h2>6. Children's Privacy</h2>
   <p>
